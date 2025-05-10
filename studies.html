@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasileios Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                   <i class="fa-solid fa-v"></i>
+                   <div class="logo-text">asileios Tsamtsidis</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="studies.html">Studies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                                <div class="hero-pic">
+                    <img src="Images/UOM_GR_logo.png" alt="logo pic" style="background-color: #fff;">
+                </div>
+                <div class="hero-text">
+                    <h5 style="font-size: large;">Some information about where I  <span class="input">study:</span></h5>
+                    <br><br>
+                    <p>
+                        I am an Applied Informatics student at the <a class="uniLink" href="https://www.uom.gr/dai">University of Macedonia</a>
+                        , completing a 49-course program focused on programming, software development, databases, and IT systems.
+                        I have one more course to pass and I expect to graduate this summer and take the next step in my technology career.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer class="footer">
+        <p>&copy; 2025 Vasileios Tsamtsidis. All rights reserved.</p>
+    </footer> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
+</body>
+</html>

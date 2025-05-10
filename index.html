@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasileios Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                   <i class="fa-solid fa-v"></i>
+                   <div class="logo-text">asileios Tsamtsidis</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="studies.html">Studies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="Images/Vasileios.png" alt="logo pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">an IT Student</span></h5>
+                    <h1>Vasileios Tsamtsidis</h1>
+                    <p>I'm an IT student passionate about Backend, Frontend,
+                       Web Development, and Software Development.
+                       I love building scalable applications and exploring new technologies.</p>
+                    <div class="btn-group">
+                        <a href="TSAMTSIDIS_VASILEIOS.pdf" class="btn active">Download CV</a>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/VasileiosTsamtsidis"><i class="fa-brands fa-github"></i></a>                        
+                        <a href="https://www.linkedin.com/in/vasileios-tsamtsidis/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Vasileios Tsamtsidis. All rights reserved.</p>
+    </footer>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Web Developer","Software Developer"],
+            typedSpeed:70,
+            backSpeed:70,
+            loop:true
+        })
+    </script>
+</body>
+</html>
